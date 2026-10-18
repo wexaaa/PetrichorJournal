@@ -1,0 +1,25 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Restore
+        run: dotnet restore src/PetrichorJournal/PetrichorJournal.csproj
+      - name: Build
+        run: dotnet build src/PetrichorJournal/PetrichorJournal.csproj -c Release --no-restore
+      - name: Upload DLL
+        uses: actions/upload-artifact@v4
+        with:
+          name: PetrichorJournal-${{ github.sha }}
+          path: src/PetrichorJournal/bin/Release/netstandard2.1/PetrichorJournal.dll
