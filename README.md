@@ -73,7 +73,7 @@ Petrichor Journal keeps a separate local archive without modifying the vanilla p
 
 ### Mod manager
 
-1. Download `PetrichorJournal_0.1.3.zip` from GitHub Releases.
+1. Download `PetrichorJournal_0.1.3.zip` from [GitHub Releases](https://github.com/wexaaa/PetrichorJournal/releases).
 2. In r2modman or Thunderstore Mod Manager, open **Settings → Import local mod**.
 3. Select the downloaded ZIP and launch the modded game.
 

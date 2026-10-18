@@ -39,7 +39,7 @@ BepInEx/config/PetrichorJournal/archive
 
 Через r2modman или Thunderstore Mod Manager:
 
-1. Скачайте `PetrichorJournal_0.1.3.zip` из GitHub Releases.
+1. Скачайте `PetrichorJournal_0.1.3.zip` из [GitHub Releases](https://github.com/wexaaa/PetrichorJournal/releases).
 2. Откройте **Settings → Import local mod**.
 3. Выберите ZIP и запустите модифицированную игру.
 
